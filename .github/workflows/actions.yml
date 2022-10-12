@@ -1,9 +1,11 @@
 on:
-  push
+  push:
+    branches:
+    - main
 
 jobs:
   typechecks:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Upload do repositório
         uses: actions/checkout@v3
